@@ -1,0 +1,1 @@
+A backend API that allows users to authenticate and manage personal notes
