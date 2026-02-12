@@ -4,7 +4,6 @@ import express from "express"
 import connectDB from "./src/config/db.js"
 import userRouter from "./src/routes/user.routes.js";
 import authRouter from "./src/routes/auth.routes.js";
-import { adminMiddleware, authMiddleware } from "./src/middlewares/auth.middleware.js";
 
 const app = express()
 
