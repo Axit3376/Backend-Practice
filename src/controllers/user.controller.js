@@ -56,7 +56,6 @@ export const updateUser = async (req, res, next) => {
             if("email" in req.body) updateData.email = email
                         // Alternate way
                         // if(req.body.hasOwnProperty("username"))
-            if(Object.keys(updateData).length == 0) return res.status(400).json({message: "No fields to update!"})
             const updatedUser = await updateUserService(userId, updateData)
             return res.status(200).json({updatedUser})
     } catch (error) {
